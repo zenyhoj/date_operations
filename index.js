@@ -26,9 +26,11 @@ btn.addEventListener("click", function () {
   let span = document.createElement("span");
 
   if (timeLapsed < 0) {
-    span.innerHTML = `You've entered an invalid date values. Start time must not be greater than the End time.`;
+    span.style.color = "red";
+    span.innerHTML = `You've entered an invalid date values. Start time must not be greater than the End time!.`;
   } else if (!timeLapsed) {
-    span.innerHTML = `Please provide a value`;
+    span.style.color = "red";
+    span.innerHTML = `Please provide a value!`;
   } else {
     span.innerHTML = `Elapsed Time: ${timeLapsed.toFixed(2)} hours`;
   }
