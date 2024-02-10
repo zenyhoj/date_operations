@@ -38,7 +38,6 @@ btn.addEventListener("click", function () {
   h2.appendChild(span);
 
   // btn.insertAdjacentElement("afterend", h2);
-
   // let result = dateEnd.getTime() - dateStart.getTime();
   // let result = (dateEnd - dateStart) / 1000 / 3600;
 });
