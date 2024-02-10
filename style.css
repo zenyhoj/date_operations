@@ -29,3 +29,12 @@ label {
   text-decoration: underline;
   font-weight: bold;
 }
+
+.note {
+  display: block;
+  text-align: left;
+}
+
+.notes ol > * {
+  margin-bottom: 5px;
+}
