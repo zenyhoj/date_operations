@@ -1,13 +1,3 @@
-// Calculate number of hours lapsed based on date and time
-
-// let start = new Date(2024, 2, 7, 10, 41).getTime(); //output is milliseconds
-// let end = new Date(2024, 2, 9, 11, 30).getTime();
-
-// let result = (end - start) / 1000 / 3600; //convert the result into seconds(/1000) then hours(/3600)
-// result.toFixed(2)
-// console.log(`${result.toFixed(2)} hours`);
-// Next, get the value from the date input fields;
-
 let btn = document.querySelector(".calculate");
 btn.addEventListener("click", function () {
   let dateStart = new Date(document.querySelector("#dateStart").value);
@@ -38,8 +28,4 @@ btn.addEventListener("click", function () {
   }
 
   h2.appendChild(span);
-
-  // btn.insertAdjacentElement("afterend", h2);
-  // let result = dateEnd.getTime() - dateStart.getTime();
-  // let result = (dateEnd - dateStart) / 1000 / 3600;
 });
