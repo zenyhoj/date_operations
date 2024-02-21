@@ -32,7 +32,9 @@ btn.addEventListener("click", function () {
     span.style.color = "red";
     span.innerHTML = `Please provide a value!`;
   } else {
-    span.innerHTML = `Elapsed Time: ${timeLapsed.toFixed(2)} hours`;
+    span.innerHTML = `Elapsed Time: ${timeLapsed.toFixed(2)} hours or ${(
+      timeLapsed / 24
+    ).toFixed(2)} days`;
   }
 
   h2.appendChild(span);
